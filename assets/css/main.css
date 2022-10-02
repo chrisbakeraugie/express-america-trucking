@@ -1945,6 +1945,10 @@ ul.menu li:first-child {
 	display: inline-block;
 }
 
+#logo img {
+	max-width: 25vw;
+}
+
 #logo h1 {
 	background: #ff4486;
 	color: #fff;
