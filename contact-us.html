@@ -48,22 +48,14 @@
 					<!-- Content -->
 					<article>
 
-						<h2>No Sidebar</h2>
+						<h2>Contact Us</h2>
 
-						<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-							Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-							Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-							consequat etiam lorem ipsum dolor sit amet nullam.</p>
+						<p>You can reach us at theWhiteSoxAreAGlorifiedLittleLeagueTeam@SadRobbie.com. More information below.</p>
 
-						<h3>More intriguing information</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-							justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-							ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-							vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-							Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-							rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-							Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-							Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+						<h3>We can add a bunch of details below or just remove the section. Your call</h3>
+						<p>The form below is set to send emails to me right now. We will adjust it to send them to whatever inbox
+							you'd like. We are using formspree. They as long as you're not basically doing all your business through
+							them, it should remain free.</p>
 
 						<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
 							quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
@@ -74,6 +66,30 @@
 
 					</article>
 
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div id="main-wrapper">
+			<div class="container">
+				<div id="content">
+					<article style="text-align: center;">
+						Want to send a quick message to us? Use the form below and we'll get back to you.
+					</article>
+					<form id="formspree-form" action="https://formspree.io/f/xwkzqken" method="POST">
+						<label>
+							Your email:
+							<input type="email" name="email" placeholder="placeholder@email.com" required>
+						</label>
+						<label>
+							Your message:
+							<textarea name="message" placeholder="Enter your message here, we'll be sure to respond soon"
+								required></textarea>
+						</label>
+						<button id="submit-email" type="submit">Send</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -109,7 +125,7 @@
 
 						<!-- Contact -->
 						<section class="widget contact last">
-							<h3><a href="contact-us">Contact Us</a></h3>
+							<h3><a href="/contact-us.html">Contact Us</a></h3>
 							<!-- <ul>
 											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -151,7 +167,18 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		var submitButton = document.getElementById("submit-email");
+		var form = document.getElementById("formspree-form");
 
+		form.addEventListener("submit", (event) => {
+			event.preventDefault();
+			submitButton.style.backgroundColor = "gray";
+			submitButton.innerText = "Thanks for your message!"
+		})
+
+		console.error("Attribute Error: 'Robbie' object has no attribute: 'good qualities'")
+	</script>
 </body>
 
 </html>
