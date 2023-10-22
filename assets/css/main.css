@@ -1992,6 +1992,22 @@ ul.menu li:first-child {
   fill: #0658a4;
 }
 
+.box.feature .image.featured.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust this to your desired height */
+  width: 100%;
+  background: #f5f5f5; /* Background color, change if needed */
+}
+
+.service-icon-map {
+  margin-top: 200px;
+  width: 40em;
+  height: 40em;
+  fill: #0658a4;
+}
+
 /* Widgets */
 
 .widget.thumbnails .grid {
@@ -2869,5 +2885,12 @@ ul.menu li:first-child {
 
   #copyright {
     text-align: left;
+  }
+
+  .service-icon-map {
+    margin-top: 100px;
+    width: 20em;
+    height: 20em;
+    fill: #0658a4;
   }
 }
