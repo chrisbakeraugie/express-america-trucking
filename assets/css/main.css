@@ -1757,7 +1757,7 @@ button,
   -webkit-appearance: none;
   position: relative;
   display: inline-block;
-  background: #0090c5;
+  background: #0658a4;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -2001,10 +2001,16 @@ ul.menu li:first-child {
   background: #f5f5f5; /* Background color, change if needed */
 }
 
-.service-icon-map {
+#service-icon-map {
   margin-top: 200px;
   width: 40em;
   height: 40em;
+  fill: #0658a4;
+}
+
+#service-icon-shield {
+  width: 15em;
+  height: 15em;
   fill: #0658a4;
 }
 
@@ -2887,10 +2893,20 @@ ul.menu li:first-child {
     text-align: left;
   }
 
-  .service-icon-map {
+  .box.feature .image.featured.map {
+    height: 200px;
+  }
+
+  #service-icon-map {
     margin-top: 100px;
     width: 20em;
     height: 20em;
+    fill: #0658a4;
+  }
+
+  #service-icon-shield {
+    width: 7em;
+    height: 7em;
     fill: #0658a4;
   }
 }
