@@ -327,6 +327,20 @@ table {
   width: 1400px;
 }
 
+#contact-sidebar {
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#message-icon {
+  width: auto;
+  height: 10em;
+  fill: #0658a4;
+}
+
 @media screen and (max-width: 1680px) {
   .container {
     width: 1200px;
@@ -1088,6 +1102,10 @@ table {
     align-items: stretch;
   }
 
+  .row#contact {
+    flex-direction: column-reverse;
+  }
+
   .row > * {
     box-sizing: border-box;
   }
@@ -1321,6 +1339,10 @@ table {
   .row.gtr-200.gtr-uniform > * {
     padding-top: 50px;
   }
+
+  #message-icon {
+    height: 5em;
+  }
 }
 
 @media screen and (max-width: 736px) {
@@ -1329,6 +1351,10 @@ table {
     flex-wrap: wrap;
     box-sizing: border-box;
     align-items: stretch;
+  }
+
+  .row#contact {
+    flex-direction: column-reverse;
   }
 
   .row > * {
@@ -1563,6 +1589,10 @@ table {
 
   .row.gtr-200.gtr-uniform > * {
     padding-top: 40px;
+  }
+
+  #message-icon {
+    height: 5em;
   }
 }
 

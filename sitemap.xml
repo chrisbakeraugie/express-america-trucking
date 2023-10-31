@@ -4,26 +4,24 @@
     <loc>https://expressrockford.com/index.html</loc>
     <lastmod>2023-10-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://expressrockford.com/our-fleet.html</loc>
+    <loc>https://expressrockford.com/services.html</loc>
     <lastmod>2023-10-21</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://expressrockford.com/about-us.html</loc>
     <lastmod>2023-10-21</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://expressrockford.com/contact-us.html</loc>
     <lastmod>2023-10-21</lastmod>
     <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://expressrockford.com/index.html</loc>
-    <lastmod>2023-10-21</lastmod>
-    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

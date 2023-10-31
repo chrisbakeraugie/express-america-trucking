@@ -43,53 +43,41 @@
 		<!-- Main -->
 		<div id="main-wrapper">
 			<div class="container">
-				<div id="content">
-
-					<!-- Content -->
-					<article>
-
-						<h2>Contact Us</h2>
-
-						<p>You can reach us at theWhiteSoxAreAGlorifiedLittleLeagueTeam@SadRobbie.com. More information below.</p>
-
-						<h3>We can add a bunch of details below or just remove the section. Your call</h3>
-						<p>The form below is set to send emails to me right now. We will adjust it to send them to whatever inbox
-							you'd like. We are using formspree. They as long as you're not basically doing all your business through
-							them, it should remain free.</p>
-
-						<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-							quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-							Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-							fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-							Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-							Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-
-					</article>
-
-				</div>
-			</div>
-		</div>
-
-		<br />
-
-		<div id="main-wrapper">
-			<div class="container">
-				<div id="content">
-					<article style="text-align: center;">
-						Want to send a quick message to us? Use the form below and we'll get back to you.
-					</article>
-					<form id="formspree-form" action="https://formspree.io/f/xwkzqken" method="POST">
-						<label>
-							Your email:
-							<input type="email" name="email" placeholder="placeholder@email.com" required>
-						</label>
-						<label>
-							Your message:
-							<textarea name="message" placeholder="Enter your message here, we'll be sure to respond soon"
-								required></textarea>
-						</label>
-						<button id="submit-email" type="submit">Send</button>
-					</form>
+				<div class="row gtr-200" id="contact">
+					<div class="col-4 col-12-medium">
+						<div id="contact-sidebar">
+							<!-- Sidebar -->
+							<svg xmlns="http://www.w3.org/2000/svg" id="message-icon" viewBox="0 0 512 512">
+								<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+								<path
+									d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z" />
+							</svg>
+						</div>
+					</div>
+					<div class="col-8 col-12-medium imp-medium">
+						<div id="content">
+							<!-- Content -->
+							<article>
+								<h2>Contact Us</h2>
+								<p>Contact our team anytime, 24/7 by calling <a href="tel:8153950060">(815) 395-0060</a>, emailing <a
+										href="mailto:Dispatch@expressrockford.com">Dispatch (Dispatch@ExpressRockford.com)</a>, or by adding
+									your email address and questions below. We're looking forward to your call!
+								</p>
+							</article>
+							<form id="formspree-form" action="https://formspree.io/f/xwkzqken" method="POST">
+								<label>
+									Your email:
+									<input type="email" name="email" placeholder="placeholder@email.com" required>
+								</label>
+								<label>
+									Your message:
+									<textarea name="message" placeholder="Enter your message here, we'll be sure to respond soon"
+										required></textarea>
+								</label>
+								<button id="submit-email" type="submit">Send</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -98,15 +86,9 @@
 		<div id="footer-wrapper">
 			<footer id="footer" class="container">
 				<div class="row">
-					<div class="col-3 col-6-medium col-12-small">
-
-
-
-					</div>
-
+					<div class="col-3 col-6-medium col-12-small"></div>
 
 					<div class="col-3 col-6-medium col-12-small">
-
 						<!-- Links -->
 						<section class="widget links">
 							<a target="_blank"
@@ -120,26 +102,16 @@
 						</section>
 					</div>
 					<div class="col-3 col-6-medium col-12-small">
-
 						<!-- Contact -->
 						<section class="widget contact last">
 							<h3><a href="/contact-us.html">Contact Us</a></h3>
-							<!-- <ul>
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-										</ul> -->
 							<p>
-
 								2136 12th St.<br />
 								Rockford, IL 61104<br />
 								Office: (815) 395-0060 <br />
 								Dispatch@expressrockford.com
 							</p>
 						</section>
-
 					</div>
 				</div>
 				<div class="row">
@@ -155,28 +127,26 @@
 			</footer>
 		</div>
 
-	</div>
+		<!-- Scripts -->
 
-	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			var submitButton = document.getElementById("submit-email");
+			var form = document.getElementById("formspree-form");
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-		var submitButton = document.getElementById("submit-email");
-		var form = document.getElementById("formspree-form");
+			form.addEventListener("submit", (event) => {
+				event.preventDefault();
+				submitButton.style.backgroundColor = "gray";
+				submitButton.innerText = "Thanks for your message!"
+			})
 
-		form.addEventListener("submit", (event) => {
-			event.preventDefault();
-			submitButton.style.backgroundColor = "gray";
-			submitButton.innerText = "Thanks for your message!"
-		})
-
-		console.error("Attribute Error: 'Robbie' object has no attribute: 'good qualities'")
-	</script>
+			console.error("Attribute Error: 'Robbie' object has no attribute: 'good qualities'")
+		</script>
 </body>
 
 </html>
